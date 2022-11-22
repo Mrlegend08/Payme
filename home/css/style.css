@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1256px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 0;
+  margin: 0;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.wrapper {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  margin: 0;
+  top: 210px;
+  left: 550px;
+  border-radius: 7px;
+}
+
+.radio-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.radio-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 20px;
+  /* padding-right: 10px; */
+  width: 95%;
+}
+.full-stop {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 15px auto;
+  background-color: grey;
+  box-shadow: 12px 0 0 rgb(151, 151, 151), 24px 0 0 rgb(151, 151, 151);
+}
+.title {
+  padding: 0 75px;
+  margin-bottom: 15px;
+}
+
+.pay-logo {
+  margin-left: 37px;
+}
+
+.pay-name {
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 600;
+}
+.radio-label:hover{
+  background-color: #eee;
+}
+.radio-label:hover > .pay-name {
+  opacity: 1;
+}
+
+.tick {
+  position: absolute;
+  display: none;
+  width: 20px;
+  height: 20px;
+  right: 0;
+}
+
+.pay-radio {
+  display: none;
+}
+
+.pay-radio:checked + .tick {
+  display: block;
+}
+
+.next {
+  width: 100%;
+  border: none;
+  padding: 15px 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-radius: 7px;
+  background-color: #598bdd;
+  color: white  ;
+}

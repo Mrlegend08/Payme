@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    margin: 100px auto;
+    width: 1110px;
+}
+
+.radio-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 400px;
+    gap: 10px;
+}
+.inp-radio{
+    display: none;
+}
+
+.radio-label{
+    display:  flex; 
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-sport{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.inp-radio:checked + .radio-tennis{
+    background-image: url("../images/table-tennis.png");
+    box-shadow: 0 0 3px 1px #2D7EBF;
+}
+
+.inp-radio:checked + .radio-basketboll{
+    background-image: url("../images/basketball-ball.png");
+    box-shadow: 0 0 3px 1px #2D7EBF;
+}
+
+.inp-radio:checked + .radio-voleybol{
+    box-shadow: 0 0 3px 1px #2D7EBF;
+    background-image: url("../images/volleyball-ball.png");
+}
+
+.inp-radio:checked + .radio-hokkey{
+    box-shadow: 0 0 3px 1px #2D7EBF;
+    background-image: url("../images/hockey-puck.png");
+}

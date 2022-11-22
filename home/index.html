@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayMe</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="wrapper">
+            <div class="full-stop"></div>
+            <h1 class="title">PAYMENT METHOD</h1>
+            <form
+              class="radio-form"
+              action="https://echo.htmlacademy.ru"
+              method="post"
+            >
+              <label class="radio-label">
+                <img class="pay-logo" src="./images/visa.svg" alt="Visa-logo" />
+                <span class="pay-name">VISA</span>
+                <input
+                  class="pay-radio"
+                  type="radio"
+                  name="Pay-type"
+                  value="visa"
+                />
+                <img class="tick" src="./images/check.svg" alt="chek"/>
+              </label>
+              <label class="radio-label">
+                <img
+                  class="pay-logo"
+                  src="./images/mastercard.svg"
+                  alt="mastercard-logo"
+                />
+                <span class="pay-name">MASTERCARD</span>
+                <input
+                  class="pay-radio"
+                  type="radio"
+                  name="Pay-type"
+                  value="mastercard"
+                />
+                <img class="tick" src="./images/check.svg" alt="chek"/>
+              </label>
+              <label class="radio-label">
+                <img
+                  class="pay-logo"
+                  src="./images/maestro.svg"
+                  alt="maestro-logo"
+                />
+                <span class="pay-name">MAESTRO</span>
+                <input
+                  class="pay-radio"
+                  type="radio"
+                  name="Pay-type"
+                  value="maestro"
+                />
+                <img class="tick" src="./images/check.svg" alt="chek"/>
+              </label>
+              <button class="next">NEXT STEP</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
